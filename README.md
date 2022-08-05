@@ -2,11 +2,11 @@
 
 Example execution:
 ```
-docker run --rm -it -v "$PWD/data:/data" -p 32773:80 adrianlzt/docker-nginx-php-upload
+docker run --rm -it -v "$PWD/data:/var/www/html/uploads/" -p 8080:80 xdung24/docker-nginx-php-upload
 ```
 
-Go to http://localhost:32773 to upload files.
+Go to http://localhost:8080 to upload files.
 
-Files will be uploaded to /data/uploads
+Files will be uploaded to /data
 
 Upload limit size: 10000MB
